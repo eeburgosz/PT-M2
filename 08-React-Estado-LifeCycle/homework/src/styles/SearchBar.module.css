@@ -1,0 +1,25 @@
+.searchBar{
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.input{
+    border: 1px transparent black;
+    outline: none;
+}
+
+.btn{
+    background-color: #4361ee;
+    border-color: #4361ee;
+    outline: none;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: #4cc9f0;
+    transition: 0.5s;
+}
+
+.icon{
+    padding-bottom: 4px;
+    font-size: 20px
+}

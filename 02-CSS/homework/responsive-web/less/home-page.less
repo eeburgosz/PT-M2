@@ -1,0 +1,114 @@
+// Conteindo del Home
+
+.home {
+
+  .intro {
+
+    h2 {
+      padding: 15px;
+    }
+
+    p {
+      padding:0 15px;
+    }
+
+    /*Estilos de la imagen*/
+    img{
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+  }
+
+  .music-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+    }
+
+    @media @phone{
+      .ondas, .tecnologia {
+        display: none;
+      }
+      .auricular{
+        width: 100%;
+      }
+    }
+
+  }
+
+  .musica-nueva {
+    padding: 15px;
+
+    h3 {
+      margin-top: 11px;
+    }
+
+    p {
+      margin-top: 13px;
+    }
+  }
+
+  .actual {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+
+    @media @phone{
+      .flex(column-reverse, center, center); //column-reverse invierte la dirección de las columnas.. Ahora me queda la imagen sobre el texto.      
+    }
+
+    .actual-text {
+      width: 50%;
+
+      @media @phone{
+        width: 100%;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 26px;
+      }
+
+      .btn {
+        .btn(white, @btn-bg-color, 10px);
+        
+        @media @phone{
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    .actual-img {
+      width: 46%;
+      margin-left: 4%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;        
+      }
+
+      @media @phone{
+        width: 100%;
+      }
+    }
+  }
+}

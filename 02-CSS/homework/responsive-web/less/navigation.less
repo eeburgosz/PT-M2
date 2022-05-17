@@ -1,0 +1,31 @@
+// Código de Nav acá
+nav{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */   // Los llevo a los mixins porque se repiten en el 'ul'
+    /*-------Mixins-------*/
+    .flex (column, center, center);
+    /*--------------------*/
+    padding: 15px;
+    background-color: @nav-bg; /* Sacado de "variables.less" */
+    ul{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; */  // Los llevo a los mixins
+        /*-------Mixins-------*/
+        .flex (row, space-around, center);
+        /*--------------------*/
+        padding-top: 10px;
+        width: 60%;
+        a{
+            font-size: 15px;
+            text-decoration: none;
+            color: @nav-font; /* Sacado de "variables.less" */
+        }
+        @media @phone {
+            width: 80%;
+        }
+    }
+}

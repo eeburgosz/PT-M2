@@ -1,0 +1,44 @@
+.btn{
+    background-color: #d62828;
+    width: 25px;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+.btn:hover{
+    background-color: #adb5bd;
+    transition: 0.5s;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: fit-content;
+    align-content: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    opacity: 60%;
+}
+.card:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.temp{
+    display: flex;
+    flex-direction: column;
+}
+
+.temp p{
+    margin-bottom: 1px;
+}
